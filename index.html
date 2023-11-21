@@ -10,6 +10,9 @@
   <body>
     <div id="app">
       <button @click="getEmail">Crea lista di e-mail</button>
+      <ul>
+        <li v-if="eMails.length > 0" v-for="email in eMails">{{ email }}</li>
+      </ul>
     </div>
 
     <!-- Axios -->

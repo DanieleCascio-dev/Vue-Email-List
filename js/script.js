@@ -8,11 +8,15 @@ const app = createApp({
   },
   methods: {
     getEmail() {
-      axios
-        .get("https://flynn.boolean.careers/exercises/api/random/mail")
-        .then(function (resp) {
-          console.log(resp.data.response);
-        });
+      for (let i = 1; i < 10; i++) {
+        axios
+          .get("https://flynn.boolean.careers/exercises/api/random/mail")
+          .then((resp) => {
+            console.log(resp.data.response);
+            this.eMails.push(resp.data.response);
+            console.log(this.eMails);
+          });
+      }
     },
   },
 }).mount("#app");
