@@ -9,8 +9,9 @@
   </head>
   <body>
     <div id="app">
-      <button @click="getEmail">Genera lista di e-mail</button>
-      <button @click="PrintEmail">Stampa lista di e-mail</button>
+      <h2>Emails List</h2>
+      <!-- <button @click="getEmail">Genera lista di e-mail</button> -->
+      <!-- <button @click="PrintEmail">Stampa lista di e-mail</button> -->
       <ul>
         <li v-show="eMails.length == 10" v-for="email in eMails">
           {{ email }}

@@ -4,7 +4,7 @@ const app = createApp({
   data() {
     return {
       eMails: [],
-      print: false,
+      // print: false,
     };
   },
   created() {
