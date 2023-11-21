@@ -18,5 +18,8 @@ const app = createApp({
           });
       }
     },
+    resetEmails() {
+      this.eMails = [];
+    },
   },
 }).mount("#app");
