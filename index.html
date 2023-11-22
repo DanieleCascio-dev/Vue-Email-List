@@ -12,12 +12,13 @@
       <h2>Emails List</h2>
       <!-- <button @click="getEmail">Genera lista di e-mail</button> -->
       <!-- <button @click="PrintEmail">Stampa lista di e-mail</button> -->
+      <h3 v-show="eMails.length != 10">Stiamo caricando le mails</h3>
       <ul>
         <li v-show="eMails.length == 10" v-for="email in eMails">
           {{ email }}
         </li>
       </ul>
-      <button @click="resetEmails">Clear emails</button>
+      <!-- <button @click="resetEmails">Clear emails</button> -->
     </div>
 
     <!-- Axios -->
